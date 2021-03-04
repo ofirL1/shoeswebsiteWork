@@ -1,0 +1,14 @@
+html,body,#root{
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  text-align: center;
+  direction: rtl;
+  background: linear-gradient(45deg,red,pink);
+  color: rgb(0, 0, 0);
+  font-family: 'Courier New', Courier, monospace;
+}
+
+a{
+  color: red;
+}

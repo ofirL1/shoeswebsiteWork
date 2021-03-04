@@ -1,0 +1,13 @@
+.OurStory {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: flex-start;
+    padding: 20px;
+    padding-right: 60px;
+}
+
+.OurStory > h1 {
+    text-shadow: 2px 2px red;
+
+}

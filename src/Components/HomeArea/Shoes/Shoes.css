@@ -1,0 +1,9 @@
+.Shoes {
+   display: grid;
+   grid-template-columns: 90% 10%;
+   margin: 5px;
+}
+
+.Shoes > img    {
+    display: inline-block;
+}

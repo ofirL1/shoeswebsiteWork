@@ -1,0 +1,10 @@
+.Footer {
+	font-size: small;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.Footer > p {
+	margin-left: 10px;
+}

@@ -1,0 +1,11 @@
+.Menu {
+	display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.Menu a{
+    margin: 10px 0;
+    font-weight: 700;
+}
