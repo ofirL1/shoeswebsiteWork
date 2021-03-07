@@ -1,0 +1,13 @@
+.Employees {
+    padding-top: 20px;
+    height: 90%;
+    overflow: auto;
+}
+
+.Employees > .Employees-Container{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}

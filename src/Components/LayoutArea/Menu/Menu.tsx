@@ -9,6 +9,8 @@ function Menu(): JSX.Element {
             <NavLink to="/products" exact>מוצרים</NavLink>
             <NavLink to="/succses-story" exact>סיפורי הצלחה</NavLink>
             <NavLink to="/about" exact>מי אנחנו</NavLink>
+            <NavLink to="/employees" exact>העובדים שלנו</NavLink>
+
         </div>
     );
 }

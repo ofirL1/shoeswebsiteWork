@@ -59,6 +59,11 @@ function ProdcutList(): JSX.Element {
                 <img src={UltraBoost}></img>
                 <p>מחיר: 400 ILS</p>
             </div>
+            <div className="Product-Card">
+                <h3>נעלי אדידס</h3>
+                <img src={UltraBoost}></img>
+                <p>מחיר: 400 ILS</p>
+            </div>
         </div>
     );
 }

@@ -1,5 +1,6 @@
 import { Redirect, Route, Switch } from "react-router-dom";
 import About from "../../AboutArea/About/About";
+import Employees from "../../EmployeesArea/Employees/Employees";
 import Home from "../../HomeArea/Home/Home";
 import OurStory from "../../OurStoryArea/OurStory/OurStory";
 import ProdcutList from "../../ProductsArea/ProdcutList/ProdcutList";
@@ -14,6 +15,7 @@ function Routing(): JSX.Element {
                 <Route path="/products" component={ProdcutList}  />
                 <Route path="/succses-story" component={OurStory} exact/>
                 <Route path="/about" component={About} exact/>
+                <Route path="/employees" component={Employees} exact/>
                 <Redirect from="/" to="/home" exact/>
                 <Route component={Page404}/>
             </Switch>
