@@ -1,3 +1,4 @@
+import { NavLink } from "react-router-dom";
 import EmployeesModel from "../../../Model/EmployeesModel";
 import globals from "../../../Service/Globals";
 import "./EmployeesCard.css";
@@ -9,7 +10,9 @@ interface EmployeesCardProps {
 function EmployeesCard(props: EmployeesCardProps): JSX.Element {
     return (
         <div className="EmployeesCard">
+            <NavLink to={"/employees/details/" + props.employee.id}>
             <p><img src={globals.employeesUrl + "/images/" + props.employee.imageName}/></p>
+            </NavLink>
 			<p>{props.employee.firstName + " " + props.employee.lastName}</p>
             <p>{props.employee.title}</p>
             <p>{props.employee.birthDay}</p>
