@@ -10,4 +10,12 @@
     flex-direction: row;
     align-items: center;
     justify-content: center;
+    position: relative;
+
+}
+
+.Employees > .Employees-Container > .AddIcon{
+    position: absolute;
+    right: 10px;
+    top: 0px;
 }

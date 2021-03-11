@@ -1,5 +1,7 @@
+import { Add } from "@material-ui/icons";
 import axios from "axios";
 import { Component } from "react";
+import { NavLink } from "react-router-dom";
 import EmployeesModel from "../../../Model/EmployeesModel";
 import globals from "../../../Service/Globals";
 import EmployeesCard from "../EmployeesCard/EmployeesCard";
@@ -37,7 +39,11 @@ class Employees extends Component<{}, EmployeesState> {
             
             <div className="Employees">
                 <h1>העובדים שלנו</h1>
+               
                 <div className="Employees-Container">
+                <NavLink className="AddIcon" to="/employees/addEmployee">
+                    <Add />
+                </NavLink>
 				    {this.state.employees.map(e => <EmployeesCard key={e.id} employee={e}/>)}
                 </div>
             </div>

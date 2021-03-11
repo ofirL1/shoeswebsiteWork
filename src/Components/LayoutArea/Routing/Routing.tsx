@@ -9,6 +9,7 @@ import Page404 from "../../SharedArea/Page404/Page404";
 import Loadable from "react-loadable";
 import "./Routing.css";
 import PleaseWait from "../../SharedArea/PleaseWait/PleaseWait";
+import AddEmployee from "../../EmployeesArea/AddEmployee/AddEmployee";
 
 function Routing(): JSX.Element {
     return (
@@ -20,6 +21,7 @@ function Routing(): JSX.Element {
                 <Route path="/about" component={Loadable({ loader: () => import("../../AboutArea/About/About"), loading: PleaseWait })} exact />
                 <Route path="/employees" component={Employees} exact/>
                 <Route path="/employees/details/:id" component={EmployeesDetails} exact/>
+                <Route path="/employees/addEmployee" component={AddEmployee} exact/>
                 <Redirect from="/" to="/home" exact/>
                 <Route component={Page404}/>
             </Switch>
